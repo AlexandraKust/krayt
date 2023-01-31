@@ -996,6 +996,10 @@ body {
 			line-height: 160%;
 		}
 		padding: 0;
+
+		&::after {
+			right: 0;
+		}
 	}
 	.custom-select-panel {
 		width: 100%;

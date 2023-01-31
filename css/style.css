@@ -1159,6 +1159,9 @@ body.lock {
   font-size: 14px;
   line-height: 160%;
 }
+.sale-slide .custom-select-opener::after {
+  right: 0;
+}
 .sale-slide .custom-select-panel {
   width: 100%;
   left: 0;
