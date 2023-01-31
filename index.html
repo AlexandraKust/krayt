@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Крайт</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+	<link rel="stylesheet" href="css/custom-select.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container-fluid">
+			<div class="header__row d-flex flex-wrap justify-content-between">
+				<div class="header__contacts align-items-center">
+					<div class="d-flex align-items-center">
+						<svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.99995 0C2.80479 0 0.205353 2.59944 0.205353 5.79456C0.205353 9.75981 5.39095 15.581 5.61173 15.8269C5.8191 16.0579 6.18117 16.0575 6.38817 15.8269C6.60895 15.581 11.7945 9.75981 11.7945 5.79456C11.7945 2.59944 9.19507 0 5.99995 0ZM5.99995 8.70997C4.39238 8.70997 3.08457 7.40213 3.08457 5.79456C3.08457 4.187 4.39242 2.87919 5.99995 2.87919C7.60748 2.87919 8.91529 4.18703 8.91529 5.79459C8.91529 7.40216 7.60748 8.70997 5.99995 8.70997Z"
+								fill="#303030" />
+						</svg>
+						<select class="select header__select" name="city" id="city">
+							<option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+							<option value="Москва">Москва</option>
+							<option value="Нижний Новгород">Нижний Новгород</option>
+							<option value="Ростов-на-Дону">Ростов-на-Дону</option>
+						</select>
+					</div>
+					<a href="tel:88007852535" class="header__link d-flex align-items-center">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M15.5645 11.7424L13.3317 9.50954C12.5342 8.71209 11.1786 9.0311 10.8596 10.0678C10.6204 10.7855 9.82292 11.1842 9.10522 11.0247C7.51033 10.626 5.35723 8.5526 4.9585 6.87797C4.71927 6.16024 5.19774 5.36279 5.91544 5.12359C6.95212 4.80461 7.2711 3.44895 6.47365 2.65151L4.2408 0.418659C3.60285 -0.139553 2.64591 -0.139553 2.0877 0.418659L0.572553 1.93381C-0.942594 3.5287 0.732042 7.75516 4.48004 11.5032C8.22803 15.2511 12.4545 17.0056 14.0494 15.4106L15.5645 13.8955C16.1228 13.2575 16.1228 12.3006 15.5645 11.7424Z"
+								fill="#303030" />
+						</svg>
+						<span>8 800 785-25-35</span>
+					</a>
+				</div>
+				<a href="#" class="header__logo">
+					<img src="media/icon/logo.svg" alt="Goldy Store ювелирный магазин">
+				</a>
+				<div class="header__action align-items-center">
+					<div class="header__login d-flex">
+						<a href="#" class="header__link">Вход</a>
+						<a href="#" class="header__link">Регистрация</a>
+					</div>
+					<div class="header__icons d-flex align-items-center">
+						<div class="header__icons-item">
+							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z"
+									fill="none" style="stroke:none !important;" />
+							</svg>
+							<div class="icon-counter">23</div>
+						</div>
+						<div class="header__icons-item">
+							<svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="1.1" y1="8" x2="1.1" y2="15" stroke="none" stroke-width="2.2"
+									style="fill:none !important;" />
+								<line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="none" stroke-width="2.2"
+									style="fill:none !important;" />
+								<line x1="11.1" y1="3" x2="11.1" y2="15" stroke="none" stroke-width="2.2"
+									style="fill:none !important;" />
+							</svg>
+						</div>
+						<div class="header__icons-item">
+							<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="4" width="16" height="13" rx="1" fill="none" />
+								<mask id="path-2-inside-1_1102_46" fill="none">
+									<rect y="4" width="16" height="13" rx="1" />
+								</mask>
+								<rect y="4" width="16" height="13" rx="1" stroke="none" stroke-width="3.2"
+									mask="url(#path-2-inside-1_1102_46)" />
+								<path d="M4 8L4 5C4 2.79086 5.79086 1 8 1V1C10.2091 1 12 2.79086 12 5L12 8" stroke="none"
+									stroke-width="1.6" style="fill:none !important;" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__nav nav align-items-center justify-content-between">
+					<ul class="nav__list d-flex align-items-center">
+						<li class="nav__item"><a href="#" class="nav__link active">Каталог</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Бренды</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Магазины</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Доставка и оплата</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+					</ul>
+					<label class="nav__search d-flex align-items-center">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M11.2 6.5C11.2 9.09574 9.09574 11.2 6.5 11.2C3.90426 11.2 1.8 9.09574 1.8 6.5C1.8 3.90426 3.90426 1.8 6.5 1.8C9.09574 1.8 11.2 3.90426 11.2 6.5ZM10.062 11.938C9.03902 12.6094 7.81512 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.1561 12.3806 9.66755 11.3609 10.8153L15.2728 14.7272L14 16L10 12L10.062 11.938Z"
+								fill="#303030" />
+						</svg>
+						<input class="nav__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+					</label>
+				</nav>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<!-- главный слайдер -->
+		<section class="hero">
+			<div class="container-fluid">
+				<div class="swiper-container hero__container">
+					<div class="swiper-wrapper hero__wrapper">
+						<div class="swiper-slide hero__slide d-flex align-items-center justify-content-between">
+							<div class="hero__descr">
+								<p class="hero__title">Суперскидка до 60%</p>
+								<p class="hero__subtitle">НА БРИЛЛИАНТЫ</p>
+								<a href="#" class="hero__btn main-btn">Подробнее</a>
+							</div>
+							<div class="hero__img">
+								<img src="media/img/main-slide-1@1x.png"
+									srcset="media/img/main-slide-1@2x.png 2x, media/img/main-slide-1@3x.png 3x" width="548"
+									height="548" loading="lazy" alt="золотое кольцо с бриллиантами">
+							</div>
+						</div>
+						<div class="swiper-slide hero__slide d-flex align-items-center justify-content-between">
+							<div class="hero__descr">
+								<p class="hero__title">Суперскидка до 60%</p>
+								<p class="hero__subtitle">НА кольца</p>
+								<a href="#" class="hero__btn main-btn">Подробнее</a>
+							</div>
+							<div class="hero__img">
+								<img src="media/img/main-slide-1@1x.png"
+									srcset="media/img/main-slide-1@2x.png 2x, media/img/main-slide-1@3x.png 3x" width="548"
+									height="548" loading="lazy" alt="золотое кольцо с бриллиантами">
+							</div>
+						</div>
+						<div class="swiper-slide hero__slide d-flex align-items-center justify-content-between">
+							<div class="hero__descr">
+								<p class="hero__title">Суперскидка до 60%</p>
+								<p class="hero__subtitle">НА браслеты</p>
+								<a href="#" class="hero__btn main-btn">Подробнее</a>
+							</div>
+							<div class="hero__img">
+								<img src="media/img/main-slide-1@1x.png"
+									srcset="media/img/main-slide-1@2x.png 2x, media/img/main-slide-1@3x.png 3x" width="548"
+									height="548" loading="lazy" alt="золотое кольцо с бриллиантами">
+							</div>
+						</div>
+					</div>
+					<div class="prev-btn-slider hero__btn-prev">
+						<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z"
+								fill="black" />
+						</svg>
+					</div>
+					<div class="next-btn-slider hero__btn-next">
+						<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+								fill="black" />
+						</svg>
+					</div>
+					<div class="swiper-pagination hero__pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- популярные товары -->
+		<section class="categories section-offset">
+			<div class="container-fluid">
+				<h2 class="categories__title section-title">Популярные категории</h2>
+				<ul class="categories__list d-flex">
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-1@1x.png"
+									srcset="media/img/categories-1@2x.png 2x, media/img/categories-1@3x.png 3x" loading="lazy"
+									alt="Кольца">
+							</div>
+							<p class="categories__name">Кольца</p>
+						</a>
+					</li>
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-2@1x.png"
+									srcset="media/img/categories-2@2x.png 2x, media/img/categories-2@3x.png 3x" loading="lazy"
+									alt="Серьги">
+							</div>
+							<p class="categories__name">Серьги</p>
+						</a>
+					</li>
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-3@1x.png"
+									srcset="media/img/categories-3@2x.png 2x, media/img/categories-3@3x.png 3x" loading="lazy"
+									alt="Помолвочные Кольца">
+							</div>
+							<p class="categories__name">Помолвочные кольца</p>
+						</a>
+					</li>
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-4@1x.png"
+									srcset="media/img/categories-4@2x.png 2x, media/img/categories-4@3x.png 3x" loading="lazy"
+									alt="Браслеты">
+							</div>
+							<p class="categories__name">Браслеты</p>
+						</a>
+					</li>
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-5@1x.png"
+									srcset="media/img/categories-5@2x.png 2x, media/img/categories-5@3x.png 3x" loading="lazy"
+									alt="Колье и подвески">
+							</div>
+							<p class="categories__name">Колье и подвески</p>
+						</a>
+					</li>
+					<li class="categories__item">
+						<a href="#" class="categories__link">
+							<div class="categories__img">
+								<img src="media/img/categories-6@1x.png"
+									srcset="media/img/categories-6@2x.png 2x, media/img/categories-6@3x.png 3x" loading="lazy"
+									alt="Часы">
+							</div>
+							<p class="categories__name">Часы</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- распродажа -->
+		<section class="sale section-offset">
+			<div class="container-fluid">
+				<h2 class="sale__title section-title">Распродажа</h2>
+
+				<ul class="nav nav-pills sale__tabs" id="pills-tab" role="tablist">
+					<li class="nav-item sale__tab-item" role="presentation">
+						<button class="nav-lin sale__btn active" id="pills-rings-tab" data-bs-target="#pills-rings"
+							type="button" role="tab" aria-controls="pills-rings" aria-selected="true">Кольца</button>
+					</li>
+					<li class="nav-item sale__tab-item" role="presentation">
+						<button class="nav-link sale__btn" id="pills-earrings-tab" data-bs-target="#pills-earrings"
+							type="button" role="tab" aria-controls="pills-earrings" aria-selected="false">Серьги</button>
+					</li>
+					<li class="nav-item sale__tab-item" role="presentation">
+						<button class="nav-link sale__btn" id="pills-bracelets-tab" data-bs-target="#pills-bracelets"
+							type="button" role="tab" aria-controls="pills-bracelets" aria-selected="false">Браслеты</button>
+					</li>
+					<li class="nav-item sale__tab-item" role="presentation">
+						<button class="nav-link sale__btn" id="pills-clock-tab" data-bs-target="#pills-clock" type="button"
+							role="tab" aria-controls="pills-clock" aria-selected="false">Часы</button>
+					</li>
+				</ul>
+				<div class="tab-content sale__tab-content" id="pills-tabContent">
+					<!-- вкладка Кольца -->
+					<div class="tab-pane sale__content-item fade show active" id="pills-rings" role="tabpanel"
+						aria-labelledby="pills-rings-tab" tabindex="0">
+						<div class="sale-arrow-prev prev-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="sale-arrow-next next-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="swiper-container sale__slider-container">
+							<div class="swiper-wrapper sale__slider-wrapper d-flex align-items-stretch">
+								<!-- 1 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- плашки -->
+										<div class="img-slide__type">
+											<div class="img-slide__type-item img-slide-sale">Sale</div>
+											<div class="img-slide__type-item img-slide-hit">Хит</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="Белое золото" selected>Белое золото</option>
+											<option value="Желтое золото">Желтое золото</option>
+											<option value="Серебро">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="16" selected>16</option>
+											<option value="16.5">16.5</option>
+											<option value="17">17</option>
+											<option value="17.5">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 2 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 3 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 4 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 5 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 6 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 7 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 8 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- вкладка Серьги -->
+					<div class="tab-pane sale__content-item fade" id="pills-earrings" role="tabpanel"
+						aria-labelledby="pills-earrings-tab" tabindex="0">
+						<div class="sale-arrow-prev prev-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="sale-arrow-next next-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="swiper-container sale__slider-container">
+							<div class="swiper-wrapper sale__slider-wrapper">
+								<!-- 1 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- плашки -->
+										<div class="img-slide__type">
+											<div class="img-slide__type-item img-slide-sale">Sale</div>
+											<div class="img-slide__type-item img-slide-hit">Хит</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price  price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="Белое золото" selected>Белое золото</option>
+											<option value="Желтое золото">Желтое золото</option>
+											<option value="Серебро">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="16" selected>16</option>
+											<option value="16.5">16.5</option>
+											<option value="17">17</option>
+											<option value="17.5">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 2 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 3 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 4 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 5 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 6 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 7 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 8 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- вкладка Браслеты -->
+					<div class="tab-pane sale__content-item fade" id="pills-bracelets" role="tabpanel"
+						aria-labelledby="pills-bracelets-tab" tabindex="0">
+						<div class="sale-arrow-prev prev-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="sale-arrow-next next-btn-slider">
+							<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="swiper-container sale__slider-container">
+							<div class="swiper-wrapper sale__slider-wrapper">
+								<!-- 1 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- плашки -->
+										<div class="img-slide__type">
+											<div class="img-slide__type-item img-slide-sale">Sale</div>
+											<div class="img-slide__type-item img-slide-hit">Хит</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="Белое золото" selected>Белое золото</option>
+											<option value="Желтое золото">Желтое золото</option>
+											<option value="Серебро">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="16" selected>16</option>
+											<option value="16.5">16.5</option>
+											<option value="17">17</option>
+											<option value="17.5">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 2 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 3 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 4 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 5 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-1@1x.png"
+														srcset="media/img/sale-ring-1@2x.png 2x, media/img/sale-ring-1@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">41 000 ₽</p>
+										<p class="price__old">65 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 6 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-2@1x.png"
+														srcset="media/img/sale-ring-2@2x.png 2x, media/img/sale-ring-2@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">56 000 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 7 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-3@1x.png"
+														srcset="media/img/sale-ring-3@2x.png 2x, media/img/sale-ring-3@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">37 500 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+								<!-- 8 карточка -->
+								<div class="swiper-slide sale__slide sale-slide">
+									<div class="sale-slide__img img-slide">
+										<!-- icons -->
+										<div class="img-slide__icons">
+											<div class="img-slide__icon img-slide__icon-like">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+														fill="none" />
+												</svg>
+											</div>
+											<div class="img-slide__icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+														fill="none" />
+												</svg>
+											</div>
+										</div>
+										<!-- еще один слайдер для картинки -->
+										<div class="swiper-container img-slide__container">
+											<div class="swiper-wrapper img-slide__wrapper">
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+												<div class="swiper-slide img-slide__item">
+													<img src="media/img/sale-ring-4@1x.png"
+														srcset="media/img/sale-ring-4@2x.png 2x, media/img/sale-ring-4@3x.png 3x"
+														loading="lazy" width="200" height="200" alt="Кольцо">
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="sale-slide__price price">
+										<p class="price__new">39 200 ₽</p>
+									</div>
+									<div class="sale-slide__descr">Стильное кольцо из белого золота c бриллиантами</div>
+									<div class="sale-slide__selects">
+										<select class="select" name="material">
+											<option value="value1" selected>Белое золото</option>
+											<option value="value2">Желтое золото</option>
+											<option value="value3">Серебро</option>
+										</select>
+										<select class="select" name="size">
+											<option value="value1" selected>16</option>
+											<option value="value2">16.5</option>
+											<option value="value2">17</option>
+											<option value="value3">17.5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- вкладка Часы -->
+					<div class="tab-pane sale__content-item fade" id="pills-clock" role="tabpanel"
+						aria-labelledby="pills-clock-tab" tabindex="0">
+						4
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- раздел со скидочными карточками -->
+		<section class="discount section-offset">
+			<div class="container-fluid">
+				<div class="discount__row d-flex">
+					<div class="discount__item">
+						<div class="discount__text">
+							<h4 class="discount__item-title">
+								Скидки
+								на&nbsp;все&nbsp;украшения с&nbsp;бриллиантами
+							</h4>
+							<p class="discount__count discount__count-green">До <span>-50%</span></p>
+						</div>
+						<div class="discount__img">
+							<img src="media/img/discount-1@1x.png"
+								srcset="media/img/discount-1@2x.png 2x, media/img/discount-1@3x.png 3x" loading="lazy"
+								alt="Кулон">
+						</div>
+					</div>
+					<div class="discount__item">
+						<div class="discount__text">
+							<h4 class="discount__item-title">
+								Скидки
+								на&nbsp;кольца
+								и&nbsp;браслеты
+							</h4>
+							<p class="discount__count discount__count-red">До <span>-40%</span></p>
+						</div>
+						<div class="discount__img">
+							<img src="media/img/discount-2@1x.png"
+								srcset="media/img/discount-2@2x.png 2x, media/img/discount-2@3x.png 3x" loading="lazy"
+								alt="Кольца">
+						</div>
+					</div>
+					<div class="discount__item">
+						<div class="discount__text">
+							<h4 class="discount__item-title">
+								снижение цен на обручальные кольца
+							</h4>
+							<p class="discount__count discount__count-yellow">До <span>-60%</span></p>
+						</div>
+						<div class="discount__img">
+							<img src="media/img/discount-3@1x.png"
+								srcset="media/img/discount-3@2x.png 2x, media/img/discount-3@3x.png 3x" loading="lazy"
+								alt="Обручальные кольца">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- товар дня -->
+		<section class="leader section-offset">
+			<div class="container-fluid">
+				<h2 class="leader__title section-title">Товар дня</h2>
+				<div class="leader-arrow-prev prev-btn-slider">
+					<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z"
+							fill="black" />
+					</svg>
+				</div>
+				<div class="leader-arrow-next next-btn-slider">
+					<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+							fill="black" />
+					</svg>
+				</div>
+				<div class="swiper-container leader-container">
+					<div class="swiper-wrapper leader-wrapper">
+						<div class="swiper-slide leader__slide slide-leader">
+							<div class="slide-leader__img img-slide">
+								<div class="img-slide__type">
+									<div class="img-slide__type-item img-slide-new">New</div>
+									<div class="img-slide__type-item img-slide-sale">Sale</div>
+									<div class="img-slide__type-item img-slide-hit">Хит</div>
+								</div>
+								<div class="swiper-container slide-leader__container">
+									<div class="img-slide__arrow-prev">
+										<svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.2" d="M9.07107 0.999977L2 8.07104L9.07107 15.1421" stroke="none"
+												stroke-width="2" />
+										</svg>
+									</div>
+									<div class="img-slide__arrow-next">
+										<svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.07102 0.999977L8.14209 8.07104L1.07102 15.1421" stroke="none"
+												stroke-width="2" />
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide d-flex justify-content-center">
+											<img src="media/img/leader-1@1x.png"
+												srcset="media/img/leader-1@2x.png 2x, media/img/leader-1@3x.png 3x" width="550"
+												height="550" loading="lazy" alt="Кольцо из золота с бриллиантами">
+										</div>
+										<div class="swiper-slide">
+											<img src="media/img/leader-1@1x.png"
+												srcset="media/img/leader-1@2x.png 2x, media/img/leader-1@3x.png 3x" width="550"
+												height="550" loading="lazy" alt="Кольцо из золота с бриллиантами">
+										</div>
+										<div class="swiper-slide">
+											<img src="media/img/leader-1@1x.png"
+												srcset="media/img/leader-1@2x.png 2x, media/img/leader-1@3x.png 3x" width="550"
+												height="550" loading="lazy" alt="Кольцо из золота с бриллиантами">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-leader__descr">
+								<div class="slide-leader__stars d-flex align-items-center">
+									<img src="media/icon/star.svg" alt="Рейтинг 4,2 из 5">
+									<img src="media/icon/star.svg" alt="">
+									<img src="media/icon/star.svg" alt="">
+									<img src="media/icon/star.svg" alt="">
+									<img src="media/icon/star-empty.svg" alt="">
+									<span>4,2</span>
+								</div>
+								<h3 class="slide-leader__title">Кольцо из золота с бриллиантами</h3>
+								<p class="slide-leader__code">Артикул: 1012076</p>
+								<div class="slide-leader__disount d-flex">
+									<div class="price ">
+										<p class="price__new">22 000 ₽</p>
+										<p class="price__old">22 000 ₽</p>
+										<div class="price__discount">-45%</div>
+									</div>
+									<div class="slide-leader__timer d-flex">
+										<div class="timer-item">
+											<span class="timer-number">12</span>
+											<span class="timer-type">часов</span>
+										</div>
+										<div class="timer-item">
+											<span class="timer-number">46</span>
+											<span class="timer-type">минут</span>
+										</div>
+										<div class="timer-item">
+											<span class="timer-number">51</span>
+											<span class="timer-type">секунд</span>
+										</div>
+									</div>
+								</div>
+								<p class="slide-leader__subtitle">цвет</p>
+								<div class="slide-leader__colors d-flex">
+									<div class="color-item">
+										<div class="color-item-silver"></div>
+									</div>
+									<div class="color-item active">
+										<div class="color-item-yellow"></div>
+									</div>
+									<div class="color-item">
+										<div class="color-item-red"></div>
+									</div>
+									<div class="color-item">
+										<div class="color-item-green"></div>
+									</div>
+								</div>
+								<div class="d-flex">
+									<p class="slide-leader__subtitle">размер</p>
+									<button type="button" class="hint__btn" data-bs-toggle="popover"
+										data-bs-trigger="hover focus" data-bs-placement="top" data-bs-custom-class="hint"
+										data-bs-content="Также как существующая теория напрямую зависит от экономической целесообразности
+										принимаемых решений.">
+										?
+									</button>
+								</div>
+								<div class="slide-leader__size d-flex">
+									<div class="slide-leader__size-item active">16,5</div>
+									<div class="slide-leader__size-item">17,5</div>
+									<div class="slide-leader__size-item">18,5</div>
+									<div class="slide-leader__size-item">19</div>
+									<div class="slide-leader__size-item">19,5</div>
+									<div class="slide-leader__size-item">18,5</div>
+									<div class="slide-leader__size-item">19</div>
+									<div class="slide-leader__size-item disabled">19,5</div>
+									<div class="slide-leader__size-item disabled">19,5</div>
+								</div>
+								<div class="slide-leader__actions d-flex">
+									<div class="slide-leader__btns">
+										<button class="main-btn">в корзину</button>
+										<button class="main-btn main-btn-white">купить в 1 клик</button>
+									</div>
+									<div class="slide-leader__add">
+										<div class="slide-leader__add-item slide-leader__add-item-like">
+											<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+													fill="none" />
+											</svg>
+											<p>Сохранить</p>
+										</div>
+										<div class="slide-leader__add-item">
+											<svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<line x1="1.1" y1="8" x2="1.1" y2="15" stroke="none" stroke-width="2.2" />
+												<line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="none"
+													stroke-width="2.2" />
+												<line x1="11.1" y1="3" x2="11.1" y2="15" stroke="none" stroke-width="2.2" />
+											</svg>
+											<p>Сравнить</p>
+										</div>
+										<div class="slide-leader__add-item">
+											<svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M9.66667 3.58329C9.66667 1.97246 10.9725 0.666626 12.5833 0.666626C14.1942 0.666626 15.5 1.97246 15.5 3.58329C15.5 5.19411 14.1942 6.49996 12.5833 6.49996C11.769 6.49996 11.0327 6.16626 10.5036 5.62816L6.22756 8.21884C6.29649 8.46745 6.33333 8.7294 6.33333 8.99996C6.33333 9.24301 6.3036 9.47912 6.24758 9.70485L10.6009 12.2773C11.1212 11.7949 11.8178 11.5 12.5833 11.5C14.1942 11.5 15.5 12.8058 15.5 14.4166C15.5 16.0274 14.1942 17.3333 12.5833 17.3333C10.9725 17.3333 9.66667 16.0274 9.66667 14.4166C9.66667 14.1736 9.69639 13.9375 9.75241 13.7118L5.39908 11.1394C4.87875 11.6217 4.18214 11.9166 3.41667 11.9166C1.80585 11.9166 0.5 10.6108 0.5 8.99996C0.5 7.38914 1.80585 6.08329 3.41667 6.08329C4.15373 6.08329 4.82695 6.3567 5.34042 6.80763L9.72225 4.15284C9.68578 3.96864 9.66667 3.7782 9.66667 3.58329ZM12.5833 2.33329C11.893 2.33329 11.3333 2.89294 11.3333 3.58329C11.3333 4.27364 11.893 4.83329 12.5833 4.83329C13.2737 4.83329 13.8333 4.27364 13.8333 3.58329C13.8333 2.89294 13.2737 2.33329 12.5833 2.33329ZM3.41667 7.74996C2.72632 7.74996 2.16667 8.30961 2.16667 8.99996C2.16667 9.69031 2.72632 10.25 3.41667 10.25C4.10701 10.25 4.66667 9.69031 4.66667 8.99996C4.66667 8.30961 4.10701 7.74996 3.41667 7.74996ZM12.5833 13.1666C11.893 13.1666 11.3333 13.7263 11.3333 14.4166C11.3333 15.107 11.893 15.6666 12.5833 15.6666C13.2737 15.6666 13.8333 15.107 13.8333 14.4166C13.8333 13.7263 13.2737 13.1666 12.5833 13.1666Z"
+													fill="none" />
+											</svg>
+											<p>Поделиться</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- статьи -->
+		<section class="articles section-offset">
+			<div class="container-fluid">
+				<h2 class="articles__title section-title">Статьи</h2>
+				<a href="#" class="articles__link d-flex">
+					<span>Читать все</span>
+					<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M26.5303 6.53033C26.8232 6.23744 26.8232 5.76257 26.5303 5.46967L21.7574 0.696701C21.4645 0.403808 20.9896 0.403808 20.6967 0.696701C20.4038 0.989594 20.4038 1.46447 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM-6.55671e-08 6.75L26 6.75L26 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z"
+							fill="black" />
+					</svg>
+				</a>
+				<ul class="articles__list d-flex">
+					<li class="articles__item">
+						<a href="#" class="articles__item-link d-flex">
+							<div class="articles__img">
+								<img src="media/img/articles-1@1x.jpg"
+									srcset="media/img/articles-1@2x.jpg 2x, media/img/articles-1@3x.jpg 3x" width="310"
+									height="381" loading="lazy" alt="набор колец">
+							</div>
+							<time class="articles__date" datetime="2021-09-21">21 сентября 2021</time>
+							<h5 class="articles__name">Обручальные кольца: тренды 2021</h5>
+						</a>
+					</li>
+					<li class="articles__item">
+						<a href="#" class="articles__item-link d-flex">
+							<div class="articles__img">
+								<img src="media/img/articles-2@1x.jpg"
+									srcset="media/img/articles-2@2x.jpg 2x, media/img/articles-2@3x.jpg 3x" width="310"
+									height="381" loading="lazy" alt="декольте девушки с бусами">
+							</div>
+							<time class="articles__date" datetime="2021-09-25">25 сентября 2021</time>
+							<h5 class="articles__name">Главные ювелирные тренды года</h5>
+						</a>
+					</li>
+					<li class="articles__item">
+						<a href="#" class="articles__item-link d-flex">
+							<div class="articles__img">
+								<img src="media/img/articles-3@1x.jpg"
+									srcset="media/img/articles-3@2x.jpg 2x, media/img/articles-3@3x.jpg 3x" width="310"
+									height="381" loading="lazy" alt="заколка с жемчугом">
+							</div>
+							<time class="articles__date" datetime="2021-09-21">21 сентября 2021</time>
+							<h5 class="articles__name">Жемчуг: 7 малоизвестных фактов о культовом украшении</h5>
+						</a>
+					</li>
+					<li class="articles__item">
+						<a href="#" class="articles__item-link d-flex">
+							<div class="articles__img">
+								<img src="media/img/articles-4@1x.jpg"
+									srcset="media/img/articles-4@2x.jpg 2x, media/img/articles-4@3x.jpg 3x" width="310"
+									height="381" loading="lazy" alt="золотой медальон на цепочке на руке">
+							</div>
+							<time class="articles__date" datetime="2021-09-21">21 сентября 2021</time>
+							<h5 class="articles__name">Как отличить золото от подделки: 10 практических советов</h5>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+	<script src="js/custom-select.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
