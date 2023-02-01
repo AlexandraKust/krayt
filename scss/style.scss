@@ -647,7 +647,7 @@ body {
 	&__img {
 		flex-grow: 0;
 		flex-shrink: 0;
-		// max-width: 548px;
+		max-width: 548px;
 	}
 
 	&__btn-prev {
@@ -684,6 +684,7 @@ body {
 		}
 		&__img {
 			max-width: 360px;
+			max-height: 360px;
 		}
 		&__btn-prev {
 			left: 12px;
@@ -705,6 +706,8 @@ body {
 		}
 		&__img {
 			max-width: 280px;
+			max-height: 280px;
+			img {object-fit: contain;}
 		}
 		&__btn-next, &__btn-prev {
 			display: none;
@@ -988,6 +991,10 @@ body {
 		width: 100%;
 		padding: 9px 16px;
 
+		&:nth-child(2) .custom-select-opener::before {
+			content: "Размер: ";
+			font-size: 14px;
+		}
 	}
 	.custom-select-opener  {
 		span {
@@ -1001,6 +1008,7 @@ body {
 			right: 0;
 		}
 	}
+	
 	.custom-select-panel {
 		width: 100%;
 		left: 0;
@@ -1015,7 +1023,6 @@ body {
 	}
 	@media (max-width: 767.98px) {
 		padding: 20px 14px 14px;
-
 	}
 	@media (max-width: 575.98px) {
 		width: 100%;
@@ -1115,6 +1122,7 @@ body {
 		width: 200px;
 		height: 200px;
 		margin-bottom: 26px;
+		padding-bottom: 9px;
 	}
 
 	&__arrow-prev {
@@ -1143,7 +1151,7 @@ body {
 
 	.swiper-pagination {
 		position: relative;
-		top: 2px;
+		// top: 1px;
 	}
 }
 

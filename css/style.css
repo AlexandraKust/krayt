@@ -809,6 +809,7 @@ body.lock {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  max-width: 548px;
 }
 .hero__btn-prev {
   position: absolute;
@@ -845,6 +846,7 @@ body.lock {
   }
   .hero__img {
     max-width: 360px;
+    max-height: 360px;
   }
   .hero__btn-prev {
     left: 12px;
@@ -866,6 +868,11 @@ body.lock {
   }
   .hero__img {
     max-width: 280px;
+    max-height: 280px;
+  }
+  .hero__img img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .hero__btn-next, .hero__btn-prev {
     display: none;
@@ -1151,6 +1158,10 @@ body.lock {
   width: 100%;
   padding: 9px 16px;
 }
+.sale-slide .custom-select-container:nth-child(2) .custom-select-opener::before {
+  content: "Размер: ";
+  font-size: 14px;
+}
 .sale-slide .custom-select-opener {
   padding: 0;
 }
@@ -1291,6 +1302,7 @@ body.lock {
   width: 200px;
   height: 200px;
   margin-bottom: 26px;
+  padding-bottom: 9px;
 }
 .img-slide__arrow-prev {
   position: absolute;
@@ -1318,7 +1330,6 @@ body.lock {
 }
 .img-slide .swiper-pagination {
   position: relative;
-  top: 2px;
 }
 
 /* раздел со скидками */
